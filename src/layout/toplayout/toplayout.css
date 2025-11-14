@@ -1,0 +1,35 @@
+.toplayout {
+
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      height: 40px;
+      gap: 8px;
+
+      img {
+        height: 100%;
+
+        object-fit: contain;
+      }
+    }
+
+
+  }
+
+ main {
+    
+    flex: 1;
+    overflow: hidden;
+  }
+}

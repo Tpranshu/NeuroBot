@@ -1,0 +1,232 @@
+.homepage {
+    display: flex;
+    text-align: center;
+    /* margin-top: 20%; */
+    font-size: 12px;
+    gap: 100px;
+    height: 100%;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 0px;
+
+
+    }
+
+    .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        background: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(0, 255, 255, 1) 100%);
+
+        /* background-clip: text; */
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+
+        /* @media screen and (max-width: 1280px) {
+            font-size: 64px;
+
+
+        } */
+
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+        /* color: rgb(100, 100, 100); */
+        font-weight: bold;
+
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 300;
+        /* color: rgb(150, 150, 150); */
+        font-weight: bold;
+
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(62, 83, 244);
+
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background-color: white;
+        transform: scale(1.05);
+        color: rgb(62, 83, 244);
+        ;
+    }
+
+    .right {
+        flex: 1;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/banner3.jpg');
+        /* animation: 10s ease-in-out infinite alternate rotaterightbg; */
+        /* z-index: 1; */
+        /* opacity: -1; */
+        /* border: solid white; */
+        /* filter: blur(8px); */
+        overflow: hidden;
+
+        .imgcontainer {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            /* filter: blur(8px); */
+            .bg-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                /* border: 2px solid blue; */
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                border-radius: 50px;
+                /* filter: blur(8px); */
+
+                .bg {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #6e8efb, #a777e3, #fbc1ff);
+                    filter: blur(70px);
+                    animation: 10s ease-in-out infinite alternate rotatebg;
+                    /* filter: blur(8px); */
+
+                }
+            }
+
+            .bg-gif {
+                border-radius: 10px;
+                background-image: url('/banner3.jpg');
+                /* z-index: 1; */
+                border-radius: 10px;
+                border: solid transparent;
+                /* border:  solid white; */
+                opacity: 1;
+                width: 100%;
+                /* background-size: cover; */
+                background-size: auto 100%;
+                /* animation: 3s ease-in-out infinte alternate bg-gifAnimate; */
+                animation: 8s ease-in-out infinite alternate bgSlider;
+                overflow: hidden;
+
+            }
+        }
+    }
+
+    .banner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.3;
+        animation: 100s linear infinite rotatebanner;
+        z-index: -1;
+
+    }
+
+    .bottom_logo {
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .links {
+        position: absolute;
+        bottom: 12px;
+        left: 550px;
+        display: flex;
+        gap: 10px;
+        color: grey;
+        font-size: 12px;
+    }
+
+    /* 
+    
+     */
+
+}
+
+
+@keyframes rotatebanner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* @keyframes rotaterightbg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+} */
+
+/* @keyframes bg-gifAnimate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform:scale(1.1) rotate(-5deg);
+    }
+} */
+
+
+@keyframes bgSlider {
+    0% {
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-20%) scale(1.1) rotate(-5deg);
+    }
+}

@@ -1,0 +1,17 @@
+.Dashlayout {
+    display: flex;
+    height: 100%;
+    gap: 45px;
+    padding-top: 20px;
+
+    .menu {
+        flex: 1;
+    }
+    .content {
+        flex: 4;
+       
+        background-color: black;
+        color: white;
+        /* border: 2px solid white; */
+    }   
+}

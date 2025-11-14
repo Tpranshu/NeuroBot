@@ -1,0 +1,49 @@
+.chatpage {
+    display: flex;
+    height: 100%;
+    gap: 40px;
+    padding-top: 20px;
+
+
+    .wraper {
+        flex: 1;
+        /* overflow: scroll; */
+        overflow-y: scroll;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        .chat {
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            p,
+            li {
+                margin: 10px 0px;
+            }
+
+            .msg {
+                padding: 20px;
+
+
+                &.user {
+                    align-self: flex-end;
+                    background-color: #007bff;
+                    color: white;
+                    border-radius: 10px 10px 0 10px;
+                    max-width: 80%;
+                    align-self: flex-end;
+                 
+                }
+            }
+
+        }
+    }
+
+    .chatlist {
+        flex: 1;
+    }
+}
