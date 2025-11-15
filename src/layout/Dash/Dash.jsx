@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import "./dash.css"
 import { Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from '@clerk/clerk-react'
-import Chatlist from '../../components/chatlist/chatlist';
+import Chatlist from '../../components/chatlist/Chatlist';
 
 const Dash = () => {
 
