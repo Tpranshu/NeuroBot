@@ -1,5 +1,5 @@
 import React from 'react'
-import "./N_prompt.css"
+import "./n_prompt.css"
 import { useEffect, useRef } from 'react'
 import model from '../../lib/Gemini'
 
