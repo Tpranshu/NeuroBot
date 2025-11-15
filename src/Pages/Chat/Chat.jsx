@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Chat.css"
-import Chatlist from '../../components/chatlist/chatlist'
+import Chatlist from '../../components/chatlist/Chatlist'
 import N_prompt from '../../components/N_prompt/N_prompt'
 import { data } from 'react-router-dom'
 

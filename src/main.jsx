@@ -10,8 +10,8 @@ import Dash from './layout/Dash/Dash'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Sign_in from './Pages/SignIn/Sign_in'
 import Sign_up from './Pages/SignUp/Sign_up'
-import { ClerkProvider } from '@clerk/clerk-react'
-import Chatlist from './components/chatlist/chatlist'
+// import { ClerkProvider } from '@clerk/clerk-react'
+// import Chatlist from './components/chatlist/chatlist'
 
 const router = createBrowserRouter([
   {
